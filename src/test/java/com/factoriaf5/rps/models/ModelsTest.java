@@ -12,16 +12,9 @@ public class ModelsTest {
     }
 
     @Test
-    public void createNewRock(){
+    public void create_rock(){
         Object rock = new Rock();
-        Object paper = new Paper();
-        assertNotSame(paper, rock);
-    }
-    
-    @Test
-    public void createNewPaper(){
-        Object paper = new Paper();
-        Object rock = new Rock();
-        assertNotSame(rock, paper);
+        assertTrue(rock instanceof Rock);
+        assertTrue("Rock", true);
     }
 }

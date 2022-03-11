@@ -2,15 +2,43 @@ package com.factoriaf5.rps.models;
 
 public class Rock {
     
-    Object rock = new Rock();
+    public String name = "Rock";
+    public Boolean wins = true;
+    public Boolean losses = true;
+    public Boolean draws = true;
 
-    private static boolean winsTo(Object scissors) {
-        System.out.println("Rock wins scissors");
-        return true;
+    public Rock() {
     }
 
-    private static boolean losesTo(Object Paper) {
-        return true;
+    public Rock(String name) {
+        this.name = name;
     }
 
+    public void winsTo(Boolean wins){
+        this.wins = wins;
+    }
+
+    public void lossesTo(Boolean losses){
+        this.losses = losses;
+    }
+
+    public void drawsTo(Boolean draws){
+        this.draws = draws;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Boolean getWins() {
+        return wins;
+    }
+
+    public Boolean getLosses() {
+        return losses;
+    }
+    
+    public Boolean getDraws(){
+        return draws;
+    }
 }
