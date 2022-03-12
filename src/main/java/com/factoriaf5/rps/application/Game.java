@@ -2,10 +2,12 @@ package com.factoriaf5.rps.application;
 
 public class Game {
     
-    public static String play(String player, String computer){
+    public String play(String playerOne, String playerTwo){
         
-        
-        
-        return player;
+        if(playerOne == "Rock" && playerTwo == "Scissors" || playerOne == "Scissors" && playerTwo == "Rock"){
+            return "Rock wins";
+        }
+
+        return "Draw";
     }
 }

@@ -17,4 +17,16 @@ public class GameTest {
 
         assertEquals("Rock wins", result);
     }
+
+    @Test
+    public void rock_wins_scissors_reverse(){
+        Game game = new Game();
+        Scissors playerOne = new Scissors();
+        Rock playerTwo = new Rock();
+
+        String result = game.play(playerOne.getName(), playerTwo.getName());
+
+        assertEquals("Rock wins", result);
+    }
+
 }
