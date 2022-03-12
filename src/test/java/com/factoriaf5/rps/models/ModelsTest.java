@@ -17,4 +17,19 @@ public class ModelsTest {
         assertTrue(rock instanceof Rock);
         assertTrue("Rock", true);
     }
+    
+    @Test
+    public void create_paper(){
+        Object paper = new Paper();
+        assertTrue(paper instanceof Paper);
+        assertTrue("Paper", true);
+    }
+
+    @Test
+    public void create_scissors(){
+        Object scissors = new Scissors();
+        assertTrue(scissors instanceof Scissors);
+        assertTrue("Scissors", true);
+    }
+
 }

@@ -2,10 +2,10 @@ package com.factoriaf5.rps.models;
 
 public class Rock {
     
-    public String name = "Rock";
-    public Boolean wins = true;
-    public Boolean losses = true;
-    public Boolean draws = true;
+    private String name = "Rock";
+    private Boolean wins = true;
+    private Boolean losses = true;
+    private Boolean draws = true;
 
     public Rock() {
     }
